@@ -47,4 +47,4 @@ Además, Random Forest suele tener un buen desempeño en tareas de clasificació
 Un aspecto adicional a favor es su capacidad para estimar la importancia de las variables, lo cual resulta especialmente útil en entornos financieros, donde muchas veces es necesario justificar las decisiones del modelo.
 También es un algoritmo que permite controlar el sobreajuste de forma efectiva, mediante parámetros como la profundidad máxima de los árboles (max_depth), el número mínimo de observaciones por hoja (min_samples_leaf). Estos ajustes ayudan a evitar que el modelo se adapte demasiado a los datos de entrenamiento.
 
-
+Sin embargo, el modelo Random Forest también presenta algunas limitaciones que deben considerarse en el contexto de este dataset. Si bien permite obtener una medida de la importancia de las variables, sigue siendo en gran parte una "black box", lo cual puede dificultar explicar de forma clara por qué un préstamo en particular fue clasificado como riesgoso. Esto puede ser una desventaja en el sector financiero, donde a menudo se exige justificar las decisiones ante clientes o entes reguladores.
