@@ -8,7 +8,7 @@ Aplicar técnicas de machine learning en este contexto permite identificar patro
 
 ## Variables del Dataset de Préstamos
 
-| Nombre original                    | Nombre en español                               |
+| Nombre original                    | Descripción                          |
 |-----------------------------------|--------------------------------------------------|
 | `person_age`                      | Edad                                             |
 | `person_income`                   | Ingreso anual                                    |
