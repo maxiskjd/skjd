@@ -6,6 +6,24 @@ En el sector financiero, el incumplimiento de pagos representa uno de los princi
 
 Aplicar técnicas de machine learning en este contexto permite identificar patrones en los datos históricos que no son fácilmente detectables con métodos tradicionales. Esto ayuda a anticipar posibles incumplimientos antes de que ocurran, lo que da margen para actuar con tiempo. Con predicciones más precisas, la institución puede aplicar medidas concretas de mitigación, como ajustar condiciones del préstamo, exigir garantías adicionales o incluso rechazar solicitudes con alto riesgo de impago.
 
+## Variables del Dataset de Préstamos
+
+| Nombre original                    | Nombre en español                               |
+|-----------------------------------|--------------------------------------------------|
+| `person_age`                      | Edad                                             |
+| `person_income`                   | Ingreso anual                                    |
+| `person_home_ownership`           | Tipo de propiedad de vivienda                   |
+| `person_emp_length`               | Años de experiencia laboral                      |
+| `loan_intent`                     | Propósito del préstamo                           |
+| `loan_grade`                      | Calificación del préstamo                        |
+| `loan_amnt`                       | Monto del préstamo                               |
+| `loan_int_rate`                   | Tasa de interés del préstamo                     |
+| `loan_status (TARGET)`                     | Estado del préstamo (0: sin mora, 1: en mora)    |
+| `loan_percent_income`            | Porcentaje del ingreso destinado al préstamo     |
+| `cb_person_default_on_file`       | Historial de mora previa                         |
+| `cb_preson_cred_hist_length`      | Antigüedad del historial crediticio             |
+
+
 # Plan de acción
 ### 1. Dataset a utilizar
 Este conjunto de datos contiene información sobre solicitantes de préstamos y las características de sus créditos, con el objetivo principal de evaluar el riesgo de incumplimiento. Incluye variables como la edad, el ingreso anual, la situación de vivienda y el historial laboral de los solicitantes, así como detalles del préstamo, como el monto, la tasa de interés, el propósito y la calificación crediticia. También registra si el solicitante ha tenido incumplimientos previos y la longitud de su historial crediticio.
