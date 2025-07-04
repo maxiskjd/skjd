@@ -9,8 +9,10 @@ En el área financiera, el incumplimiento de pagos representa uno de los princip
 ### 1. Dataset a utilizar
 Este conjunto de datos contiene información sobre solicitantes de préstamos y las características de sus créditos, con el objetivo principal de evaluar el riesgo de incumplimiento. 
 
+Data a utilizar:
 
-| Nombre original                    | Descripción                          |
+
+| Nombre                    | Descripción                          |
 |-----------------------------------|--------------------------------------------------|
 | `person_age`                      | Edad                                             |
 | `person_income`                   | Ingreso anual                                    |
@@ -33,7 +35,7 @@ Los datos a utilizar en el modelo pasaran por una limpieza que incluye eliminar 
 ### 3. Manejo del desbalance de clases
 El dataset está desbalanceado ya que hay muchos más préstamos que fueron pagados que los que entraron en incumplimiento. Se evaluarán estrategias para compensar ese desequilibrio, considerando la opción de ajustar los pesos de las clases directamente en el modelo.
 ### 4. Entrenamiento y evaluación
-El modelo se entrenará utilizando validación cruzada para asegurar la estabilidad de los resultados. Además de la precisión, se prestará especial atención a métricas como el recall y el F1-score, ya que son más relevantes en este caso debido al interés particular en detectar los préstamos que podrían caer en incumplimiento. Se usará una matriz de confusión para obtener todos los falsos negativos para poder analizar a que se deben.
+El modelo se entrenará utilizando validación cruzada para asegurar la estabilidad de los resultados. Además de la precisión, se prestará especial atención a métricas como recall, F1-score y matriz de confusión para evaluar la cantidad de falsos positivos y falsos negativos, pues el aprobar créditos a futuros clientes morosos o rechazar créditos a potenciales pagadores, afecta directamente la rentabilidad de la institución.
 
 
 ## Justificación del modelo
