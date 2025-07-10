@@ -87,7 +87,7 @@ En relación con iteraciones anteriores, el gráfico de la curva de aprendizaje 
 
 En cuanto a la importancia de las variables, se identificaron varias que jugaron un rol clave en la clasificación. Por ejemplo, loan_percent_income fue una de las más influyentes, lo cual tiene sentido porque indica qué parte del ingreso de una persona se destina al préstamo, y eso da señales claras sobre su capacidad real de pago. También apareció como importante la variable loan_int_rate, que representa la tasa de interés asignada: tasas más altas suelen asociarse a clientes considerados de mayor riesgo. Otra variable con peso fue loan_grade, que también está relacionada con el perfil crediticio asignado por la institución financiera. Finalmente, person_income en sí fue otra variable muy relevante, ya que refleja directamente la capacidad económica del solicitante. Todas estas variables tienen una lógica bastante coherente con lo que se busca predecir.
 
-Por otro lado, también se generó la matriz de confusión, la cual muestra el rendimiento del modelo en términos de verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos. Los resultados obtenidos fueron los siguientes:
+También se generó la matriz de confusión, la cual muestra el rendimiento del modelo en términos de verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos. Los resultados obtenidos fueron los siguientes:
 
 - Predijo correctamente 15.550 casos en los que la persona no cayó en mora.
 
@@ -99,10 +99,8 @@ Por otro lado, también se generó la matriz de confusión, la cual muestra el r
 
 
 # Conclusiones
-Este trabajo permitió recorrer todo el proceso de desarrollo de un modelo de machine learning aplicado a un problema del mundo financiero real: predecir el riesgo de mora en solicitudes de crédito. A lo largo de las distintas etapas —desde la limpieza y análisis exploratorio de datos, pasando por la codificación de variables, el manejo del desbalance y la elección del modelo— fuimos ajustando parámetros e iterando hasta alcanzar un desempeño satisfactorio.
+Este trabajo permitió recorrer todo el proceso de desarrollo de un modelo de machine learning aplicado a un problema del mundo financiero real, el cual es predecir el riesgo de mora en solicitudes de crédito. A lo largo de las etapas desde la limpieza y análisis exploratorio de datos, pasando por la codificación de variables, el manejo del desbalance y la elección del modelo fuimos ajustando parámetros e iterando hasta alcanzar un desempeño satisfactorio.
 
 Una parte fundamental del trabajo fue entender cómo impactaban las configuraciones del modelo sobre las métricas finales del classification report. Esto nos llevó a explorar distintas estrategias, como el ajuste del min_samples_leaf para controlar el sobreajuste, y a interpretar la curva de aprendizaje como herramienta para validar que el modelo generalizaba correctamente. Ese análisis fue clave para confiar en que el modelo podía funcionar con datos nuevos y aportar valor más allá del entrenamiento.
 
 Además, pudimos identificar variables altamente influyentes, como el porcentaje del ingreso destinado al préstamo (loan_percent_income), la tasa de interés (loan_int_rate) y el ingreso anual (person_income). Reconocer la importancia de estas variables permite no solo mejorar el modelo, sino también orientar el foco de atención hacia factores clave que deberían considerar quienes toman decisiones crediticias en la práctica.
-
-En resumen, este proyecto no solo sirvió para entrenar un modelo preciso, sino que también fue una instancia valiosa para entender cómo una herramienta de machine learning puede integrarse en procesos reales de toma de decisiones. Utilizar modelos predictivos basados en datos mejora la eficiencia y permite a las instituciones financieras anticiparse a posibles escenarios de riesgo, optimizando así su rentabilidad y reduciendo la exposición a pérdidas.
