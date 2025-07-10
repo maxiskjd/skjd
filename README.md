@@ -97,7 +97,6 @@ Por otro lado, también se generó la matriz de confusión, la cual muestra el r
 
 - También se equivocó en 1.179 casos, clasificando como "sin mora" a personas que sí la tuvieron.
 
-Estos errores nos permiten analizar el rendimiento del modelo desde un punto de vista práctico. Los falsos negativos son especialmente críticos porque representan a personas que el modelo consideró confiables, pero que en realidad terminaron teniendo problemas de pago. En un contexto real, esto se traduce en riesgo financiero directo para la entidad que otorga los préstamos. Por otro lado, los falsos positivos también generan consecuencias: se trata de personas que fueron clasificadas como morosas sin serlo, y que por lo tanto podrían ver rechazadas sus solicitudes de crédito injustamente. En términos financieros, esto se traduce en fuga de capital, ya que se estaría dejando de otorgar créditos a personas que sí tenían capacidad de pago, afectando potencial ingreso para la entidad.
 
 # Conclusiones
 Este trabajo permitió recorrer todo el proceso de desarrollo de un modelo de machine learning aplicado a un problema del mundo financiero real: predecir el riesgo de mora en solicitudes de crédito. A lo largo de las distintas etapas —desde la limpieza y análisis exploratorio de datos, pasando por la codificación de variables, el manejo del desbalance y la elección del modelo— fuimos ajustando parámetros e iterando hasta alcanzar un desempeño satisfactorio.
